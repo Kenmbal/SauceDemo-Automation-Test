@@ -100,6 +100,8 @@ test('TEST_006', async({page}) => {
   
   await page.getByAltText('Sauce Labs Backpack').click(); // For images that are clickable
 
+  await page.screenshot({ path:'Description.png', fullPage:true})
+
   await page.waitForTimeout(5000);
 })
 
