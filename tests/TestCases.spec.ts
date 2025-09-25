@@ -146,7 +146,7 @@ test('TEST_008', async({page}) => {
   await page.getByPlaceholder('Last Name').fill('Demo');
   await page.getByPlaceholder('Zip/Postal Code').fill('3535');
 
-  await page.getByRole('button', { name: 'Checkout' }).click(); 
+  await page.getByRole('button', { name: 'Continue' }).click(); 
 
   await page.getByRole('button', { name: 'Finish' }).click();
   
